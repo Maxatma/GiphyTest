@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55391579874284534D8FC96C"
-               BuildableName = "libPods.a"
-               BlueprintName = "Pods"
+               BlueprintIdentifier = "F982D958F74A31C683D0D403"
+               BuildableName = "libPods-KRLCollectionViewGridLayout.a"
+               BlueprintName = "Pods-KRLCollectionViewGridLayout"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "AXCGiphy.h"
 #import "GTCollectionCell.h"
+#import "KRLCollectionViewGridLayout.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -16,8 +17,10 @@
 @property (nonatomic, strong) NSArray *searchResults;
 @end
 
-@implementation ViewController
+static CGFloat const kImageInsetSide = 10.0f;
 
+@implementation ViewController
+#pragma mark - LifeCycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -47,14 +50,27 @@
 }
 
 #pragma mark - CollectionView Datasource
+- (void)configureEmoticonColllectionViewLayout {
+    KRLCollectionViewGridLayout *emoji_layout    = [KRLCollectionViewGridLayout new];
+    [self configureTypeCollectionViewLayout:emoji_layout];
+    emoji_layout.numberOfItemsPerLine            = 7;
+    self.collectionView.collectionViewLayout = emoji_layout;
+}
+
+- (void)configureTypeCollectionViewLayout:(KRLCollectionViewGridLayout*)layout {
+    layout.aspectRatio      = 1.0;
+    layout.interitemSpacing = kImageInsetSide;
+    layout.lineSpacing      = kImageInsetSide;
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 1;
+    return _searchResults.count;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return _searchResults.count;
+    return 1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
@@ -63,7 +79,7 @@
     GTCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(GTCollectionCell.class)
                                                                      forIndexPath:indexPath];
 //    cell.imageView.image = _searchResults[indexPath.section];
-    AXCGiphy * gif         = self.searchResults[indexPath.section];
+    AXCGiphy * gif         = self.searchResults[indexPath.row];
     NSURLRequest * request = [NSURLRequest requestWithURL:gif.originalImage.url];
     [[[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         UIImage * image = [UIImage imageWithData:data];
@@ -75,13 +91,13 @@
 }
 
 
-- (CGSize)collectionView:(UICollectionView *)collectionView
-                  layout:(UICollectionViewLayout*)collectionViewLayout
-  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    CGSize size    = CGSizeMake(100, 100);
-    return size;
-}
+//- (CGSize)collectionView:(UICollectionView *)collectionView
+//                  layout:(UICollectionViewLayout*)collectionViewLayout
+//  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    CGSize size    = CGSizeMake(100, 100);
+//    return size;
+//}
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {

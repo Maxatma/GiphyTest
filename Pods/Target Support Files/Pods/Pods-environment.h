@@ -18,3 +18,9 @@
 #define COCOAPODS_VERSION_MINOR_Giphy_iOS 1
 #define COCOAPODS_VERSION_PATCH_Giphy_iOS 1
 
+// KRLCollectionViewGridLayout
+#define COCOAPODS_POD_AVAILABLE_KRLCollectionViewGridLayout
+#define COCOAPODS_VERSION_MAJOR_KRLCollectionViewGridLayout 0
+#define COCOAPODS_VERSION_MINOR_KRLCollectionViewGridLayout 4
+#define COCOAPODS_VERSION_PATCH_KRLCollectionViewGridLayout 0
+

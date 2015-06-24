@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -24,7 +23,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6FQ-eQ-w4i"/>
                                 </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -79,7 +77,7 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKE-MS-pXg">
-                                <rect key="frame" x="300" y="140" width="290" height="40"/>
+                                <rect key="frame" x="310" y="140" width="280" height="40"/>
                                 <color key="backgroundColor" red="0.2510693910981206" green="0.50196081400000003" blue="0.47252815672395498" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="XvG-Ci-OYj"/>
@@ -99,7 +97,7 @@
                             <constraint firstItem="obe-SU-kta" firstAttribute="top" secondItem="TKE-MS-pXg" secondAttribute="bottom" constant="20" id="6ry-Ts-PdE"/>
                             <constraint firstItem="obe-SU-kta" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="7PL-9e-gGR"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="obe-SU-kta" secondAttribute="bottom" id="AmM-5q-qxA"/>
-                            <constraint firstItem="TKE-MS-pXg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="284" id="Dji-pX-jJq"/>
+                            <constraint firstItem="TKE-MS-pXg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="10" id="Dji-pX-jJq"/>
                             <constraint firstAttribute="centerX" secondItem="MbL-eZ-RmZ" secondAttribute="trailing" constant="10" id="Hcl-qH-9E1"/>
                             <constraint firstItem="TKE-MS-pXg" firstAttribute="top" secondItem="qmi-U6-quU" secondAttribute="bottom" constant="10" id="LYi-3P-fOD"/>
                             <constraint firstItem="qmi-U6-quU" firstAttribute="top" secondItem="czr-Da-urC" secondAttribute="bottom" constant="10" id="Nbm-yF-UAS"/>

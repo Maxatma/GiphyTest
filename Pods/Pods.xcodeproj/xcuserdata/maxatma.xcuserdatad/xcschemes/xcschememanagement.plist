@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-KRLCollectionViewGridLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1BDAF86769BD45073C90AFF3</key>
+		<key>4DE94EF2C001171F79635A2F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>556B9AB63846DEEFCEE7FB53</key>
+		<key>55391579874284534D8FC96C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>77575F819378A7D955472685</key>
+		<key>602A87BA042D468C8CF2DA8D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F982D958F74A31C683D0D403</key>
 		<dict>
 			<key>primary</key>
 			<true/>
