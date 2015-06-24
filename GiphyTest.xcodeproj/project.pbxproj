@@ -14,6 +14,9 @@
 		7907F04F1B3A90F200649BA1 /* GiphyTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907F04E1B3A90F200649BA1 /* GiphyTestTests.m */; };
 		7907F05B1B3A914E00649BA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907F05A1B3A914E00649BA1 /* AppDelegate.m */; };
 		7907F05F1B3A915500649BA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907F05E1B3A915500649BA1 /* ViewController.m */; };
+		7907F0691B3AA38200649BA1 /* GTCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907F0671B3AA38200649BA1 /* GTCollectionCell.m */; };
+		7907F06A1B3AA38200649BA1 /* GTCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7907F0681B3AA38200649BA1 /* GTCollectionCell.xib */; };
+		9F3CFA40DCBF44890EC7998C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBFF0AC2B5D057DA04980C4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B0CCD7B0D3B574B7F014AA2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7907F02F1B3A90F200649BA1 /* GiphyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiphyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7907F0331B3A90F200649BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7907F0341B3A90F200649BA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,11 @@
 		7907F05A1B3A914E00649BA1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7907F05D1B3A915500649BA1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7907F05E1B3A915500649BA1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7907F0661B3AA38200649BA1 /* GTCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCollectionCell.h; sourceTree = "<group>"; };
+		7907F0671B3AA38200649BA1 /* GTCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTCollectionCell.m; sourceTree = "<group>"; };
+		7907F0681B3AA38200649BA1 /* GTCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTCollectionCell.xib; sourceTree = "<group>"; };
+		9BBFF0AC2B5D057DA04980C4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A671B4BD47018212C73A57A5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F3CFA40DCBF44890EC7998C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +70,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		081B1703A7ADAE0333F758F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BBFF0AC2B5D057DA04980C4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7907F0261B3A90F100649BA1 = {
 			isa = PBXGroup;
 			children = (
 				7907F0311B3A90F200649BA1 /* GiphyTest */,
 				7907F04B1B3A90F200649BA1 /* GiphyTestTests */,
 				7907F0301B3A90F200649BA1 /* Products */,
+				D74CD505ADA2492E43446AC8 /* Pods */,
+				081B1703A7ADAE0333F758F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +101,7 @@
 		7907F0311B3A90F200649BA1 /* GiphyTest */ = {
 			isa = PBXGroup;
 			children = (
+				7907F0651B3AA38200649BA1 /* View */,
 				7907F05C1B3A915500649BA1 /* Controller */,
 				7907F0581B3A914E00649BA1 /* AppDelegate */,
 				7907F03C1B3A90F200649BA1 /* Main.storyboard */,
@@ -135,6 +156,25 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		7907F0651B3AA38200649BA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7907F0661B3AA38200649BA1 /* GTCollectionCell.h */,
+				7907F0671B3AA38200649BA1 /* GTCollectionCell.m */,
+				7907F0681B3AA38200649BA1 /* GTCollectionCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D74CD505ADA2492E43446AC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A671B4BD47018212C73A57A5 /* Pods.debug.xcconfig */,
+				5B0CCD7B0D3B574B7F014AA2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7907F0521B3A90F200649BA1 /* Build configuration list for PBXNativeTarget "GiphyTest" */;
 			buildPhases = (
+				C20C858F19D66B691D6B291F /* Check Pods Manifest.lock */,
 				7907F02B1B3A90F200649BA1 /* Sources */,
 				7907F02C1B3A90F200649BA1 /* Frameworks */,
 				7907F02D1B3A90F200649BA1 /* Resources */,
+				04D220E5074491E25C1A495A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7907F06A1B3AA38200649BA1 /* GTCollectionCell.xib in Resources */,
 				7907F03E1B3A90F200649BA1 /* Main.storyboard in Resources */,
 				7907F0431B3A90F200649BA1 /* LaunchScreen.xib in Resources */,
 				7907F0401B3A90F200649BA1 /* Images.xcassets in Resources */,
@@ -230,11 +273,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04D220E5074491E25C1A495A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C20C858F19D66B691D6B291F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7907F02B1B3A90F200649BA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7907F0691B3AA38200649BA1 /* GTCollectionCell.m in Sources */,
 				7907F05F1B3A915500649BA1 /* ViewController.m in Sources */,
 				7907F05B1B3A914E00649BA1 /* AppDelegate.m in Sources */,
 				7907F0351B3A90F200649BA1 /* main.m in Sources */,
@@ -361,6 +438,7 @@
 		};
 		7907F0531B3A90F200649BA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A671B4BD47018212C73A57A5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GiphyTest/Info.plist;
@@ -371,6 +449,7 @@
 		};
 		7907F0541B3A90F200649BA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B0CCD7B0D3B574B7F014AA2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GiphyTest/Info.plist;
@@ -432,6 +511,7 @@
 				7907F0541B3A90F200649BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7907F0551B3A90F200649BA1 /* Build configuration list for PBXNativeTarget "GiphyTestTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +520,7 @@
 				7907F0571B3A90F200649BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

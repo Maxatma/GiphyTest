@@ -1,0 +1,13 @@
+PODS:
+  - AFNetworking/Serialization (2.3.1)
+  - Giphy-iOS (0.1.1):
+    - AFNetworking/Serialization (~> 2.3.1)
+
+DEPENDENCIES:
+  - Giphy-iOS
+
+SPEC CHECKSUMS:
+  AFNetworking: 05b9f6e3aa5ac45bc383b4bb108ef338080a26c7
+  Giphy-iOS: 95ce787749b73435524f40f700f026db5dfe251b
+
+COCOAPODS: 0.37.2
