@@ -76,6 +76,16 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="Wz3-59-lOT"/>
                                 </connections>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Sof-fo-fFB">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="9aT-Ui-cko"/>
+                                    <constraint firstAttribute="width" constant="100" id="lyF-3u-B9y"/>
+                                </constraints>
+                                <color key="color" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKE-MS-pXg">
                                 <rect key="frame" x="310" y="140" width="280" height="40"/>
                                 <color key="backgroundColor" red="0.2510693910981206" green="0.50196081400000003" blue="0.47252815672395498" alpha="1" colorSpace="calibratedRGB"/>
@@ -101,6 +111,7 @@
                             <constraint firstAttribute="centerX" secondItem="MbL-eZ-RmZ" secondAttribute="trailing" constant="10" id="Hcl-qH-9E1"/>
                             <constraint firstItem="TKE-MS-pXg" firstAttribute="top" secondItem="qmi-U6-quU" secondAttribute="bottom" constant="10" id="LYi-3P-fOD"/>
                             <constraint firstItem="qmi-U6-quU" firstAttribute="top" secondItem="czr-Da-urC" secondAttribute="bottom" constant="10" id="Nbm-yF-UAS"/>
+                            <constraint firstAttribute="centerY" secondItem="Sof-fo-fFB" secondAttribute="centerY" id="SgI-BT-IXG"/>
                             <constraint firstItem="MbL-eZ-RmZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="TMB-ee-KdW"/>
                             <constraint firstAttribute="trailing" secondItem="qmi-U6-quU" secondAttribute="trailing" constant="10" id="aaX-7z-Pzv"/>
                             <constraint firstItem="qmi-U6-quU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="e5w-JY-o97"/>
@@ -108,11 +119,13 @@
                             <constraint firstAttribute="trailing" secondItem="TKE-MS-pXg" secondAttribute="trailing" constant="10" id="tDI-1n-5XA"/>
                             <constraint firstItem="MbL-eZ-RmZ" firstAttribute="top" secondItem="qmi-U6-quU" secondAttribute="bottom" constant="10" id="vVk-PF-w4Y"/>
                             <constraint firstAttribute="trailing" secondItem="czr-Da-urC" secondAttribute="trailing" constant="10" id="w0Y-sl-gEc"/>
+                            <constraint firstAttribute="centerX" secondItem="Sof-fo-fFB" secondAttribute="centerX" id="wvh-p5-uYQ"/>
                             <constraint firstItem="czr-Da-urC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="zhe-Bt-SQ3"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="obe-SU-kta" id="Cng-2b-s08"/>
+                        <outlet property="progressIndicator" destination="Sof-fo-fFB" id="ahM-SZ-cfp"/>
                         <outlet property="searchTextField" destination="qmi-U6-quU" id="GoQ-Ol-aHx"/>
                     </connections>
                 </viewController>

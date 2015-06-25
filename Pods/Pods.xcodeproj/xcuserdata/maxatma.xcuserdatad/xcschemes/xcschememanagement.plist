@@ -9,12 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-AnimatedGIFImageSerialization.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Giphy-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-KRLCollectionViewGridLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4DE94EF2C001171F79635A2F</key>
+		<key>30B4BFA265848F36477DF6AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>55391579874284534D8FC96C</key>
+		<key>384D1DAB2FC3077C21BF6AF4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>602A87BA042D468C8CF2DA8D</key>
+		<key>51C1C2D1200ECFEFF6FEDF07</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F982D958F74A31C683D0D403</key>
+		<key>E443D64A4F30144482A63D29</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EED7859F960A6F1BF7DCBB5D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F518AC10B688483C1C745FD6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

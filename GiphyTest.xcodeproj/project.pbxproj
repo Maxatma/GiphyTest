@@ -16,6 +16,7 @@
 		7907F05F1B3A915500649BA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907F05E1B3A915500649BA1 /* ViewController.m */; };
 		7907F0691B3AA38200649BA1 /* GTCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907F0671B3AA38200649BA1 /* GTCollectionCell.m */; };
 		7907F06A1B3AA38200649BA1 /* GTCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7907F0681B3AA38200649BA1 /* GTCollectionCell.xib */; };
+		794791041B3B9A45006B900B /* GTAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 794791031B3B9A45006B900B /* GTAPI.m */; };
 		9F3CFA40DCBF44890EC7998C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBFF0AC2B5D057DA04980C4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,8 @@
 		7907F0661B3AA38200649BA1 /* GTCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCollectionCell.h; sourceTree = "<group>"; };
 		7907F0671B3AA38200649BA1 /* GTCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTCollectionCell.m; sourceTree = "<group>"; };
 		7907F0681B3AA38200649BA1 /* GTCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTCollectionCell.xib; sourceTree = "<group>"; };
+		794791021B3B9A45006B900B /* GTAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAPI.h; sourceTree = "<group>"; };
+		794791031B3B9A45006B900B /* GTAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAPI.m; sourceTree = "<group>"; };
 		9BBFF0AC2B5D057DA04980C4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A671B4BD47018212C73A57A5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +104,7 @@
 		7907F0311B3A90F200649BA1 /* GiphyTest */ = {
 			isa = PBXGroup;
 			children = (
+				794791011B3B9A45006B900B /* API */,
 				7907F0651B3AA38200649BA1 /* View */,
 				7907F05C1B3A915500649BA1 /* Controller */,
 				7907F0581B3A914E00649BA1 /* AppDelegate */,
@@ -164,6 +168,15 @@
 				7907F0681B3AA38200649BA1 /* GTCollectionCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		794791011B3B9A45006B900B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				794791021B3B9A45006B900B /* GTAPI.h */,
+				794791031B3B9A45006B900B /* GTAPI.m */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		D74CD505ADA2492E43446AC8 /* Pods */ = {
@@ -311,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794791041B3B9A45006B900B /* GTAPI.m in Sources */,
 				7907F0691B3AA38200649BA1 /* GTCollectionCell.m in Sources */,
 				7907F05F1B3A915500649BA1 /* ViewController.m in Sources */,
 				7907F05B1B3A914E00649BA1 /* AppDelegate.m in Sources */,

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "602A87BA042D468C8CF2DA8D"
+               BlueprintIdentifier = "30B4BFA265848F36477DF6AE"
                BuildableName = "libPods-Giphy-iOS.a"
                BlueprintName = "Pods-Giphy-iOS"
                ReferencedContainer = "container:Pods.xcodeproj">
