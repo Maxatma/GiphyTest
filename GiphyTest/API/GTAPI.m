@@ -93,27 +93,14 @@ static NSUInteger const kImagesLimit = 10;
                  response:(GTManagerSuccessErrorCB)blk
 {
     [AXCGiphy searchGiphyWithTerm:searchTerm
-                            limit:10
+                            limit:kImagesLimit
                            offset:0
                        completion:^(NSArray *results, NSError *error) {
                            
-//                           if (results.count == 0)
-//                           {
-//                               [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-//                                   [self presentAlertWithTitle:@"No search result"];
-//                                   [self hideIndicator];
-//                               }];
-//                               return;
-//                           }
                            
                            [[GTAPI apiManager]loadImagesGiphyArray:results
                                                           response:^(NSArray *responseObjects, NSError *error) {
                                                               blk(responseObjects, error);
-//                                                              _images = responseObjects;
-//                                                              [self hideIndicator];
-//                                                              [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-//                                                                  [_collectionView reloadData];
-//                                                              }];
                                                           }];
                        }];
 }
